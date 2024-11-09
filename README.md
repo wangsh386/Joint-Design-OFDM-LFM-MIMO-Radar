@@ -4,7 +4,6 @@ Reproduction of the paper "Joint Design of OFDM-LFM Waveforms and Receive Filter
 
 ## 理论基础 / Theoretical Foundation
 
-考虑到能量限制，基于最大化输出信号杂波噪声比（SCNR）的发射波形和接收滤波器的联合设计可以表示为：
 
 ![](https://github.com/wangsh386/Joint-Design-OFDM-LFM-MIMO-Radar/blob/main/images/core.png)
 
@@ -20,7 +19,16 @@ Reproduction of the paper "Joint Design of OFDM-LFM Waveforms and Receive Filter
   
 
 ## 使用说明 / Usage
+本项目包含以下主要 MATLAB Live Scripts，用于优化和可视化MIMO雷达波形设计：
 
+1. **MIMOfuxianBTW.mlx**  
+   这是主要的优化代码，整合了多个函数。运行此脚本后，优化结果将保存在工作区中。然后，您可以使用 **Spectra.mlx** 进行结果的可视化。
+
+2. **MIMOfuxianTW.mlx**  
+   该脚本固定初始的B，只优化T和W。适用于需要固定某些参数进行优化的情况。
+
+3. **Spectra.mlx**  
+   用于可视化优化后的结果。确保在运行 `MIMOfuxianBTW.mlx` 或 `MIMOfuxianTW.mlx` 之后，相关结果已保存在工作区中，然后运行此脚本以生成可视化图表。
 
 
 
