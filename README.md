@@ -9,7 +9,7 @@ Reproduction of the paper "Joint Design of OFDM-LFM Waveforms and Receive Filter
 
 ## 实验结果 / Experimental Results
 我们已基本完成对论文中实验结果的复现。复现结果与论文中的结果高度一致，验证了复现代码的正确性和有效性。
-
+![]https://github.com/wangsh386/Joint-Design-OFDM-LFM-MIMO-Radar/blob/main/images/compare.png
 
 
 ## 相关文献 / References
