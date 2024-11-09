@@ -2,6 +2,28 @@
 Reproduction of the paper "Joint Design of OFDM-LFM Waveforms and Receive Filter for MIMO Radar in Spatial Heterogeneous Clutter."
 
 
+## 理论基础 / Theoretical Foundation
+
+考虑到能量限制，基于最大化输出SCNR的发射波形和接收滤波器的联合设计可以表示为：
+
+$$
+\begin{align*}
+&\max _{{\mathbf {s,w}}} \quad {\frac {{{{\mathbf {s}}^{H}}{{ \boldsymbol {\Phi }}_{t}}\left ({{\mathbf {w}} }\right){\mathbf {s}}}}{{{{\mathbf {s}}^{H}}{{ \boldsymbol {\Phi }}_{c}}\left ({{\mathbf {w}} }\right){\mathbf {s}} + {\sigma ^{2}}{{\mathbf {w}}^{H}}{\mathbf {w}}}}} \\
+&\text {s.t.} \quad {{{\left \|{ {{{\mathbf {s}}_{n}}} }\right \|}^{2}} = {e_{0}},\quad n \in \mathcal {N}} \\
+&\hphantom {\text {s.t.} } \quad {{{\left \|{ {\mathbf {w}} }\right \|}^{2}} = 1} \tag{8}
+\end{align*}
+$$
+
+\textbf{公式说明}：
+- **$\mathbf{s}$**：发射波形向量
+- **$\mathbf{w}$**：接收滤波器向量
+- **$\boldsymbol{\Phi}_t(\mathbf{w})$**：与信号相关的矩阵
+- **$\boldsymbol{\Phi}_c(\mathbf{w})$**：与杂波相关的矩阵
+- **$\sigma^2$**：噪声功率
+- **$e_0$**：能量限制
+- **$\mathcal{N}$**：天线集合
+  
+
 ## 使用说明 / Usage
 
 
@@ -9,7 +31,10 @@ Reproduction of the paper "Joint Design of OFDM-LFM Waveforms and Receive Filter
 
 ## 实验结果 / Experimental Results
 我们已基本完成对论文中实验结果的复现。复现结果与论文中的结果高度一致，验证了复现代码的正确性和有效性。
-![]https://github.com/wangsh386/Joint-Design-OFDM-LFM-MIMO-Radar/blob/main/images/compare.png
+
+![](https://github.com/wangsh386/Joint-Design-OFDM-LFM-MIMO-Radar/blob/main/images/compare.png)
+
+![](https://github.com/wangsh386/Joint-Design-OFDM-LFM-MIMO-Radar/blob/main/images/compare2.png)
 
 
 ## 相关文献 / References
