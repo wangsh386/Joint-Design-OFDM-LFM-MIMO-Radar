@@ -6,22 +6,22 @@ Reproduction of the paper "Joint Design of OFDM-LFM Waveforms and Receive Filter
 
 考虑到能量限制，基于最大化输出信号杂波噪声比（SCNR）的发射波形和接收滤波器的联合设计可以表示为：
 
-\[
+$$
 \begin{align*}
-&\max_{\mathbf{s}, \mathbf{w}} \quad \frac{\mathbf{s}^H \boldsymbol{\Phi}_t(\mathbf{w}) \mathbf{s}}{\mathbf{s}^H \boldsymbol{\Phi}_c(\mathbf{w}) \mathbf{s} + \sigma^2 \mathbf{w}^H \mathbf{w}} \\
-&\text{s.t.} \quad \left\| \mathbf{s}_n \right\|^2 = e_0, \quad n \in \mathcal{N} \\
-&\hphantom{\text{s.t.}} \left\| \mathbf{w} \right\|^2 = 1 \tag{8}
+&\max _{{\mathbf {s,w}}} \quad {\frac {{{{\mathbf {s}}}^{H}}{{ \boldsymbol {\Phi }}_{t}}\left ({{\mathbf {w}} }\right){\mathbf {s}}}}{{{{\mathbf {s}}^{H}}{{ \boldsymbol {\Phi }}_{c}}\left ({{\mathbf {w}} }\right){\mathbf {s}} + {\sigma ^{2}}{{\mathbf {w}}^{H}}{\mathbf {w}}}}} \\
+&\text {s.t.} \quad {{{\left \|{ {{{\mathbf {s}}_{n}}} }\right \|}^{2}} = {e_{0}},\quad n \in \mathcal {N}} \\
+&\hphantom {\text {s.t.} } \quad {{{\left \|{ {\mathbf {w}} }\right \|}^{2}} = 1} \tag{8}
 \end{align*}
-\]
+$$
 
-其中：
-
-- \(\mathbf{s}\) 是发射波形向量。
-- \(\mathbf{w}\) 是接收滤波器向量。
-- \(\boldsymbol{\Phi}_t(\mathbf{w})\) 和 \(\boldsymbol{\Phi}_c(\mathbf{w})\) 分别表示目标和杂波的相关矩阵函数。
-- \(\sigma^2\) 是噪声功率。
-- \(e_0\) 是每个发射天线的能量约束。
-- \(\mathcal{N}\) 是发射天线的集合。
+**公式说明**：
+- **$\mathbf{s}$**：发射波形向量
+- **$\mathbf{w}$**：接收滤波器向量
+- **$\boldsymbol{\Phi}_t(\mathbf{w})$**：与信号相关的矩阵
+- **$\boldsymbol{\Phi}_c(\mathbf{w})$**：与杂波相关的矩阵
+- **$\sigma^2$**：噪声功率
+- **$e_0$**：能量限制
+- **$\mathcal{N}$**：天线集合
   
   
 
