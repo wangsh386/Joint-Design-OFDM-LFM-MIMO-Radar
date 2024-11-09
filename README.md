@@ -6,13 +6,7 @@ Reproduction of the paper "Joint Design of OFDM-LFM Waveforms and Receive Filter
 
 考虑到能量限制，基于最大化输出信号杂波噪声比（SCNR）的发射波形和接收滤波器的联合设计可以表示为：
 
-$$
-\begin{align*}
-&\max _{{\mathbf {s,w}}} \quad {\frac {{{{\mathbf {s}}}^{H}}{{ \boldsymbol {\Phi }}_{t}}\left ({{\mathbf {w}} }\right){\mathbf {s}}}}{{{{\mathbf {s}}^{H}}{{ \boldsymbol {\Phi }}_{c}}\left ({{\mathbf {w}} }\right){\mathbf {s}} + {\sigma ^{2}}{{\mathbf {w}}^{H}}{\mathbf {w}}}}} \\
-&\text {s.t.} \quad {{{\left \|{ {{{\mathbf {s}}_{n}}} }\right \|}^{2}} = {e_{0}},\quad n \in \mathcal {N}} \\
-&\hphantom {\text {s.t.} } \quad {{{\left \|{ {\mathbf {w}} }\right \|}^{2}} = 1} \tag{8}
-\end{align*}
-$$
+![](https://github.com/wangsh386/Joint-Design-OFDM-LFM-MIMO-Radar/blob/main/images/core.png)
 
 **公式说明**：
 - **$\mathbf{s}$**：发射波形向量
@@ -40,7 +34,7 @@ $$
 
 ## 相关文献 / References
 - M. Ding, Y. Li, J. Wei and E. Zhu, "Joint Design of OFDM-LFM Waveforms and Receive Filter for MIMO Radar in Spatial Heterogeneous Clutter," in *IEEE Geoscience and Remote Sensing Letters*, vol. 21, pp. 1-5, 2024, Art no. 3500105, doi: [10.1109/LGRS.2023.3331716](https://doi.org/10.1109/LGRS.2023.3331716).
-- 
+
 
 ## 关键词 / Keywords
 Clutter; Optimization methods; MIMO radar; Transmitting antennas; OFDM; Receiving antennas; Radar antennas; Heterogeneous clutter; Iterative sequence optimization (ISO); Orthogonal frequency division multiplexing (OFDM)-LFM; Waveform design
