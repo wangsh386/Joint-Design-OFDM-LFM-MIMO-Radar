@@ -50,6 +50,6 @@ Clutter; Optimization methods; MIMO radar; Transmitting antennas; OFDM; Receivin
 
 
 ## 许可证 / License
-本项目基于MIT许可证。有关详细信息，请参阅 [LICENSE](LICENSE)。
+本项目基于MIT许可证。
 
 
